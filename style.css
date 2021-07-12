@@ -1,0 +1,160 @@
+/* Standard Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styling */
+
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+}
+
+p,
+h2 {
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Start of Header Styling */
+
+header {
+  position: fixed;
+  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+}
+
+#header-img {
+  width: 150px;
+  height: 150px;
+  border: 4px solid black;
+  border-radius: 50%;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+#header h1 {
+  font-size: 4em;
+  text-align: center;
+  color: #888;
+  opacity: 0.5;
+}
+
+section {
+  background: #f2f2f2;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0; /* Position the navbar to the left side of the page */
+  width: 100%; /* Full width */
+  z-index: 50;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+section .intro {
+  width: 90%;
+  margin: auto;
+}
+
+#video {
+  display: block;
+  margin: 25px auto;
+  width: 800px;
+}
+
+#about {
+  margin: 1.5rem;
+  margin-bottom: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding-bottom: 2rem;
+}
+#products {
+  margin: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#contact {
+  margin: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Start of image styling */
+
+.showcase .images {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 70%;
+  margin: auto;
+  padding: 3rem;
+}
+
+img {
+  display: flex;
+  max-width: 50%;
+  height: auto;
+  align-items: center;
+}
+
+#form {
+  padding: 5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#email {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#submit {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+/* Media queries */
+
+@media (max-width: 968px) {
+  .showcase .images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 1.5rem;
+    padding: 3rem;
+    align-items: center;
+  }
+}
